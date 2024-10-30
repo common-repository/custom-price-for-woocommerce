@@ -1,0 +1,45 @@
+.product .cpw-disabled, .wcopc .product-item .cpw-disabled {
+  opacity: 0.2; }
+
+.product .single_variation_wrap .cpw, .wcopc .product-item .single_variation_wrap .cpw {
+  display: none; }
+
+.product .single_variation_wrap .suggested-text, .wcopc .product-item .single_variation_wrap .suggested-text {
+  margin-bottom: 1.5em;
+  display: inline-block; }
+
+.product .cpw, .wcopc .product-item .cpw {
+  margin-bottom: 1.5em; }
+  .product .cpw label, .wcopc .product-item .cpw label {
+    font-weight: bold;
+    display: block; }
+  .product .cpw .cpw-input, .wcopc .product-item .cpw .cpw-input {
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    min-width: 10em; }
+  .product .cpw .minimum-price, .wcopc .product-item .cpw .minimum-price {
+    margin: 0;
+    color: inherit;
+    font-size: .75em;
+    opacity: .7;
+    clear: both; }
+  .product .cpw .woocommerce-cpw-message, .wcopc .product-item .cpw .woocommerce-cpw-message {
+    margin: 1em 0 !important; }
+  .product .cpw:after, .wcopc .product-item .cpw:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* Integration: Elementor fix for flex styles */
+.woocommerce div.cpw-product.elementor form.cart {
+  display: block !important; }
+
+/* Integration: PayPal Payments */
+.cpw-product #ppc-button, .cpw-product #ppcp-messages {
+  display: none !important; }
+
+/* Integration: WooCommerce Payments */
+.cpw-product #wcpay-payment-request-wrapper, .cpw-product #wcpay-payment-request-button-separator {
+  display: none !important; }
